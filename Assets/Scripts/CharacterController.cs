@@ -7,10 +7,13 @@ public class CharacterController : MonoBehaviour
     public float speed = 5;
     public float jumpHeight = 5;
     public float fallSpeed = 5;
+    public float glideFall = 1;
     public bool facingRight = true;
     public Vector2 movement;
     public Rigidbody2D  rb2D;
     public bool isTouchingGround = false;
+    public bool gliding = false;
+    public bool gliderUnlocked = false;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +38,18 @@ public class CharacterController : MonoBehaviour
 
     void Update()
     {
-        rb2D.gravityScale = fallSpeed;
+        if(isTouchingGround&&gliding)
+        {
+            gliding=false;
+        }
+        if(gliding)
+        {
+            rb2D.gravityScale = glideFall;
+        }
+        else
+        {
+            rb2D.gravityScale = fallSpeed;
+        }
         movement = rb2D.velocity;
         if(Input.GetAxisRaw("Horizontal")==-1&&facingRight)
         {
@@ -48,6 +62,10 @@ public class CharacterController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && isTouchingGround)
         {
             Jump();
+        }
+        else if(Input.GetKeyDown(KeyCode.Space)&& !isTouchingGround&&gliderUnlocked)
+        {
+            gliding=!gliding;
         }
 
         movement.x = speed * Time.fixedDeltaTime * Input.GetAxis("Horizontal");
