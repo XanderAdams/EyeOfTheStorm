@@ -5,6 +5,7 @@ using UnityEngine;
 public class Sign : MonoBehaviour
 {
     public List<string> signtext;
+    public GameObject prompt;
     public int index = 0;
     public bool reading;
     public bool interactable = false;
@@ -22,6 +23,8 @@ public class Sign : MonoBehaviour
         {
             Interact();
         }
+        prompt.gameObject.SetActive(interactable);
+
     }
 
     public void Interact()
