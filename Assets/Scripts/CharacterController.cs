@@ -10,6 +10,7 @@ public class CharacterController : MonoBehaviour
     public bool facingRight = true;
     public Vector2 movement;
     public Rigidbody2D  rb2D;
+    public bool isTouchingGround = false;
     // Start is called before the first frame update
     void Start()
     {
