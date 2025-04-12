@@ -522,33 +522,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2068392651895390317, guid: 56eedbb50680fb745bcd23afc738a6bb, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2068392651895390317, guid: 56eedbb50680fb745bcd23afc738a6bb, type: 3}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2068392651895390317, guid: 56eedbb50680fb745bcd23afc738a6bb, type: 3}
-      propertyPath: m_GravityScale
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 2511630186840158351, guid: 56eedbb50680fb745bcd23afc738a6bb, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2580138312944369325, guid: 56eedbb50680fb745bcd23afc738a6bb, type: 3}
-      propertyPath: speed
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 2580138312944369325, guid: 56eedbb50680fb745bcd23afc738a6bb, type: 3}
-      propertyPath: fallSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2580138312944369325, guid: 56eedbb50680fb745bcd23afc738a6bb, type: 3}
-      propertyPath: jumpHeight
-      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

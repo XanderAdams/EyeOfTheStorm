@@ -56,6 +56,8 @@ public class CharacterController : MonoBehaviour
 
     private void Jump()
     {
+        movement = rb2D.velocity;
         movement.y = jumpHeight;
+        rb2D.velocity = movement;
     }
 }
