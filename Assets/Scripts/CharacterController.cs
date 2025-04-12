@@ -19,7 +19,17 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        movement = (movement * 0);
+        
+
+        
+        rb2D.velocity = movement;
+
+    }
+
+    void Update()
+    {
+        rb2D.gravityScale = fallSpeed;
+        movement = rb2D.velocity;
         if(Input.GetAxisRaw("Horizontal")==-1&&facingRight)
         {
             Flip();
@@ -28,10 +38,11 @@ public class CharacterController : MonoBehaviour
         {
             Flip();
         }
-
-        movement.x = speed * Time.deltaTime * Input.GetAxis("Horizontal");
-        rb2D.velocity = movement;
-
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
+        movement.x = speed * Time.fixedDeltaTime * Input.GetAxis("Horizontal");
     }
 
     private void Flip()
@@ -41,7 +52,10 @@ public class CharacterController : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
 
-        //playerText.transform.localScale *= 1;
+    private void Jump()
+    {
+        movement.y = jumpHeight;
     }
 }
