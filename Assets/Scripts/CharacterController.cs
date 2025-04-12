@@ -11,6 +11,7 @@ public class CharacterController : MonoBehaviour
     public Vector2 movement;
     public Rigidbody2D  rb2D;
     public bool isTouchingGround = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +40,7 @@ public class CharacterController : MonoBehaviour
         {
             Flip();
         }
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && isTouchingGround)
         {
             Jump();
         }
@@ -60,5 +61,15 @@ public class CharacterController : MonoBehaviour
         movement = rb2D.velocity;
         movement.y = jumpHeight;
         rb2D.velocity = movement;
+        isTouchingGround = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // You can make this more specific by checking the tag of the ground
+        if (collision.contacts[0].normal.y > 0.5f) // Makes sure we hit from the top
+        {
+            isTouchingGround = true;
+        }
     }
 }
