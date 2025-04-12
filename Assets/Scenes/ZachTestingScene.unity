@@ -294,7 +294,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 133610804}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -554,7 +554,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 257625073}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -687,6 +687,8 @@ Transform:
   - {fileID: 1106958169}
   - {fileID: 744092030}
   - {fileID: 1809969257}
+  - {fileID: 1540729217}
+  - {fileID: 1511113938}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &422511448 stripped
@@ -736,7 +738,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 523285978}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -871,7 +873,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 744092029}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1001,7 +1003,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 875290545}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1131,7 +1133,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 973875678}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1349,7 +1351,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 986021108}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1479,7 +1481,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1106958168}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1735,7 +1737,7 @@ Transform:
   m_GameObject: {fileID: 1236009159}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.4, y: 10.7, z: -0.048514873}
+  m_LocalPosition: {x: 57.64, y: 11.01, z: -0.048514873}
   m_LocalScale: {x: 6.4257, y: 0.6678, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1750,7 +1752,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1236009159}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1880,7 +1882,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1497228795}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1995,7 +1997,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1511113935}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2092,11 +2094,11 @@ Transform:
   m_GameObject: {fileID: 1511113935}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 86.3, y: 20.7, z: 0}
+  m_LocalPosition: {x: 81.52798, y: 19.456905, z: -0.048514873}
   m_LocalScale: {x: 2.89073, y: 0.92397, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 339263652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1540729214
 GameObject:
@@ -2125,7 +2127,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1540729214}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2222,11 +2224,11 @@ Transform:
   m_GameObject: {fileID: 1540729214}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 84.53001, y: 19.900002, z: 0}
+  m_LocalPosition: {x: 79.75798, y: 18.656906, z: -0.048514873}
   m_LocalScale: {x: 6.4256997, y: 0.6678, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 339263652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1577775303
 GameObject:
@@ -2270,7 +2272,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1577775303}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2527,7 +2529,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1756012247}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2657,7 +2659,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1809969256}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2787,7 +2789,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1897821232}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6fb33daee272f9e4ca96ef7e2460b7a8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2883,5 +2885,3 @@ SceneRoots:
   - {fileID: 1142510303}
   - {fileID: 339263652}
   - {fileID: 1151741282}
-  - {fileID: 1511113938}
-  - {fileID: 1540729217}
