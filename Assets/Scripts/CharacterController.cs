@@ -44,6 +44,7 @@ public class CharacterController : MonoBehaviour
         {
             Jump();
         }
+
         movement.x = speed * Time.fixedDeltaTime * Input.GetAxis("Horizontal");
     }
 
@@ -66,10 +67,18 @@ public class CharacterController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // You can make this more specific by checking the tag of the ground
-        if (collision.contacts[0].normal.y > 0.5f) // Makes sure we hit from the top
+        foreach (ContactPoint2D contact in collision.contacts)
         {
-            isTouchingGround = true;
+            // Only consider ground contact if the surface is below the player
+            if (contact.normal.y > 0.5f)
+            {
+                isTouchingGround = true;
+                return; // Don't keep checking other contacts if we already found valid ground
+            }
         }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        isTouchingGround = false;
     }
 }
