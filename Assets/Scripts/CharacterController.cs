@@ -21,11 +21,16 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+        float rayLength = 0.1f;
 
-        
+        // Get the bottom center of the player's collider
+        Bounds bounds = GetComponent<Collider2D>().bounds;
+        Vector2 rayOrigin = new Vector2(bounds.center.x, bounds.min.y - 0.01f);
+
+        RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, rayLength, LayerMask.GetMask("Ground"));
+        isTouchingGround = hit.collider != null;
+
         rb2D.velocity = movement;
-
     }
 
     void Update()
