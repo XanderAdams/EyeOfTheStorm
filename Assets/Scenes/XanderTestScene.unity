@@ -690,7 +690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2580138312944369325, guid: 56eedbb50680fb745bcd23afc738a6bb, type: 3}
       propertyPath: glideFall
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2580138312944369325, guid: 56eedbb50680fb745bcd23afc738a6bb, type: 3}
       propertyPath: groundCheckPosition

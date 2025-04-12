@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2580138312944369325}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,11 +165,13 @@ MonoBehaviour:
   speed: 500
   jumpHeight: 15
   fallSpeed: 4
-  standardFall: 4
+  glideFall: 0.5
   facingRight: 1
   movement: {x: 0, y: 0}
   rb2D: {fileID: 0}
   isTouchingGround: 0
+  gliding: 0
+  gliderUnlocked: 0
 --- !u!1 &8445569108998628611
 GameObject:
   m_ObjectHideFlags: 0
