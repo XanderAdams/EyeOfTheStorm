@@ -17,6 +17,8 @@ public class CharacterController : MonoBehaviour
     public bool groundPoundUnlocked = false;
     public bool climbingPickUnlocked = false;
     public Transform respawnPoint;
+    public bool inAir = false;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +39,16 @@ public class CharacterController : MonoBehaviour
         isTouchingGround = hit.collider != null;
 
         rb2D.velocity = movement;
+
+        if(movement.x>.1 || movement.x<-.1)
+        {
+            anim.SetBool("Walking", true);
+        }
+        else
+        {
+            
+            anim.SetBool("Walking", false);
+        }
     }
 
     void Update()
@@ -44,6 +56,10 @@ public class CharacterController : MonoBehaviour
         if(isTouchingGround&&gliding)
         {
             gliding=false;
+        }
+        if(isTouchingGround)
+        {
+            anim.SetBool("InAir", false);
         }
         if(gliding)
         {
@@ -92,6 +108,8 @@ public class CharacterController : MonoBehaviour
         movement = rb2D.velocity;
         movement.y = jumpHeight;
         rb2D.velocity = movement;
+        anim.SetTrigger("Jump");
+        anim.SetBool("InAir", true);
         isTouchingGround = false;
     }
 
