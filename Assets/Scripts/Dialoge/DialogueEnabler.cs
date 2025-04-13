@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueEnabler : MonoBehaviour
 {
     public Dialogue dialogueBox;
+    public bool clearOnZ;
     public static DialogueEnabler Instance { get; private set; } = null;
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,10 @@ public class DialogueEnabler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(clearOnZ&&Input.GetKeyDown(KeyCode.Z))
+        {
+            CloseSign();
+        }
     }
 
     public void ReadText(string text)
@@ -35,5 +39,6 @@ public class DialogueEnabler : MonoBehaviour
     public void CloseSign()
     {
         dialogueBox.gameObject.SetActive(false);
+        clearOnZ = false;
     }
 }

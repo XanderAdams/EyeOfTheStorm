@@ -14,6 +14,8 @@ public class CharacterController : MonoBehaviour
     public bool isTouchingGround = false;
     public bool gliding = false;
     public bool gliderUnlocked = false;
+    public bool groundPoundUnlocked = false;
+    public bool climbingPickUnlocked = false;
     public Transform respawnPoint;
 
     // Start is called before the first frame update
@@ -70,6 +72,10 @@ public class CharacterController : MonoBehaviour
         }
 
         movement.x = speed * Time.fixedDeltaTime * Input.GetAxis("Horizontal");
+        if(transform.position.y <-25)
+        {
+            Respawn();
+        }
     }
 
     private void Flip()
