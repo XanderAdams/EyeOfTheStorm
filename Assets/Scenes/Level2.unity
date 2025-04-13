@@ -1151,6 +1151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3355146164835448743, guid: 0cc94904cfc01dd4385526a545869b2f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7395262689121250425, guid: 0cc94904cfc01dd4385526a545869b2f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1230,6 +1234,38 @@ PrefabInstance:
     - target: {fileID: 7395262689121250425, guid: 0cc94904cfc01dd4385526a545869b2f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470792325121996322, guid: 0cc94904cfc01dd4385526a545869b2f, type: 3}
+      propertyPath: m_text
+      value: New Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470792325121996322, guid: 0cc94904cfc01dd4385526a545869b2f, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470792325121996322, guid: 0cc94904cfc01dd4385526a545869b2f, type: 3}
+      propertyPath: m_margin.w
+      value: -22.714478
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470792325121996322, guid: 0cc94904cfc01dd4385526a545869b2f, type: 3}
+      propertyPath: m_margin.x
+      value: -354.41977
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470792325121996322, guid: 0cc94904cfc01dd4385526a545869b2f, type: 3}
+      propertyPath: m_margin.y
+      value: -30.840942
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470792325121996322, guid: 0cc94904cfc01dd4385526a545869b2f, type: 3}
+      propertyPath: m_margin.z
+      value: -358.67148
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470792325121996322, guid: 0cc94904cfc01dd4385526a545869b2f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470792325121996322, guid: 0cc94904cfc01dd4385526a545869b2f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
