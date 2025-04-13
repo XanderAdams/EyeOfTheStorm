@@ -14,6 +14,7 @@ public class CharacterController : MonoBehaviour
     public bool isTouchingGround = false;
     public bool gliding = false;
     public bool gliderUnlocked = false;
+    public Transform respawnPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -103,5 +104,11 @@ public class CharacterController : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         isTouchingGround = false;
+    }
+
+    public void Respawn()
+    {
+        gameObject.transform.position = respawnPoint.position;
+        rb2D.velocity *= 0;
     }
 }
